@@ -1,0 +1,51 @@
+# Dependencias
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Variables de entorno
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Build
+dist/
+dist-ssr/
+build/
+*.local
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDEs y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+
+# Logs
+logs/
+*.log
+
+# Testing
+coverage/
+.nyc_output/
+
+# Vite
+.vite/
+vite.config.ts.timestamp-*
+
+# Temporales
+*.tmp
+.temp/
+
+# Archivos locales (no subir)
+logo.jpeg
+fondo.jpg
