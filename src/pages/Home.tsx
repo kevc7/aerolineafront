@@ -17,7 +17,6 @@ type Page = 'search' | 'my-orders' | 'my-cards' | 'my-tickets' | 'profile';
 export default function Home({ user, onLogout }: HomeProps) {
   const [currentPage, setCurrentPage] = useState<Page>('search');
   const [flights, setFlights] = useState<any[]>([]);
-  const [showResults, setShowResults] = useState(true);
   const [loading, setLoading] = useState(true);
   const [showSearchForm, setShowSearchForm] = useState(false);
 

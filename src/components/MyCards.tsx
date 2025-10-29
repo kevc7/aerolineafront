@@ -22,7 +22,6 @@ export default function MyCards({ user }: MyCardsProps) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   const [showAddModal, setShowAddModal] = useState(false);
-  const [editingCard, setEditingCard] = useState<Tarjeta | null>(null);
   
   // Modal states
   const [confirmModal, setConfirmModal] = useState({

@@ -247,7 +247,7 @@ export default function MyOrders({ user }: MyOrdersProps) {
               {orden.reservas && orden.reservas.length > 0 && (
                 <div>
                   <h4 className="font-semibold text-gray-800 mb-3">Reservas:</h4>
-                  {orden.reservas.map((reserva: any, idx: number) => (
+                  {orden.reservas.map((reserva: any) => (
                     <div key={reserva.res_id} className="bg-white p-4 rounded border mb-3">
                       {/* Información del Vuelo */}
                       <div className="flex items-center justify-between mb-3 pb-3 border-b">

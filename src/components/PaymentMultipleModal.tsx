@@ -128,7 +128,7 @@ export default function PaymentMultipleModal({ ordenes, user, onClose, onSuccess
     return numero.replace(/(\d{4})/g, '$1 ').trim();
   };
 
-  const getTipoIcon = (tipo: string) => {
+  const getTipoIcon = (_tipo: string) => {
     return '💳';
   };
 
