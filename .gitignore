@@ -45,7 +45,3 @@ vite.config.ts.timestamp-*
 # Temporales
 *.tmp
 .temp/
-
-# Archivos locales (no subir)
-logo.jpeg
-fondo.jpg
