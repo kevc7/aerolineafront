@@ -41,7 +41,6 @@ export default function Home({ user, onLogout }: HomeProps) {
 
   const handleSearchResults = (results: any[]) => {
     setFlights(results);
-    setShowResults(true);
     setShowSearchForm(false);
   };
 
@@ -100,7 +99,6 @@ export default function Home({ user, onLogout }: HomeProps) {
                 <button
                   onClick={() => {
                     setCurrentPage('search');
-                    setShowResults(true);
                     setShowSearchForm(false);
                   }}
                   className={`w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${

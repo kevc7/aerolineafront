@@ -75,7 +75,6 @@ export default function MyCards({ user }: MyCardsProps) {
       vencimiento: '',
       tipo: 'Visa'
     });
-    setEditingCard(null);
   };
 
   const handleOpenAddModal = () => {
