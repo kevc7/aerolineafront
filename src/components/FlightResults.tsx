@@ -92,13 +92,24 @@ export default function FlightResults({ flights, user, onReservaCreada }: Flight
 
               {/* Estado */}
               <div className="text-center">
-                <span className={`text-xs px-2 py-1 rounded ${
+                <span className={`text-xs px-2 py-1 rounded font-medium ${
                   flight.vl_estado === 'programado' ? 'bg-green-100 text-green-700' :
                   flight.vl_estado === 'en_hora' ? 'bg-blue-100 text-blue-700' :
+                  flight.vl_estado === 'abordando' ? 'bg-orange-100 text-orange-700' :
+                  flight.vl_estado === 'en_vuelo' ? 'bg-purple-100 text-purple-700' :
+                  flight.vl_estado === 'completado' ? 'bg-gray-100 text-gray-700' :
                   flight.vl_estado === 'retrasado' ? 'bg-yellow-100 text-yellow-700' :
+                  flight.vl_estado === 'cancelado' ? 'bg-red-100 text-red-700' :
                   'bg-gray-100 text-gray-700'
                 }`}>
-                  {flight.vl_estado}
+                  {flight.vl_estado === 'en_hora' ? '🕐 En hora' :
+                   flight.vl_estado === 'programado' ? '📅 Programado' :
+                   flight.vl_estado === 'abordando' ? '🚪 Abordando' :
+                   flight.vl_estado === 'en_vuelo' ? '✈️ En vuelo' :
+                   flight.vl_estado === 'completado' ? '✅ Completado' :
+                   flight.vl_estado === 'retrasado' ? '⏰ Retrasado' :
+                   flight.vl_estado === 'cancelado' ? '❌ Cancelado' :
+                   flight.vl_estado}
                 </span>
               </div>
             </div>
